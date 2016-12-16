@@ -1,1 +1,27 @@
-<%= @user.inspect %>
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-3 text-center'>
+      <% if @user.profile.present? %>
+        <%= image_tag @user.profile.avatar.url, class: 'avatar-show' %>
+      <% end %>
+    </div>
+    
+    <div class='col-md-6'>
+      <% if @user.profile.present? %>
+        <h1><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
+        <h3><strong><%= job_title_icon %></strong> <%= @user.profile.job_title %></h3>
+        <div class='well profile desc'>
+          <h3>Description</h3>
+          <%= @user.profile.description %>
+        </div>
+        <% if true #current_user.plan_id == 2 %>
+          <div class='well profile info'>
+            <h3>Contact Info</h3>
+            <%= @user.profile.contact_email %><br>
+            <%= @user.profile.phone_number %><br>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>  
+</div>

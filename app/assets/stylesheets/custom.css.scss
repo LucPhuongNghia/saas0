@@ -65,3 +65,24 @@
 .member {
   margin-top: 45px;
 }
+
+//user styling
+.avatar-show {
+  width: 150px;
+  height: auto;
+  margin-top: 25px;
+}
+
+.well.profile {
+  color: white;
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.well.desc {
+  background-color: green;
+}
+.well.info {
+  background-color: brown;
+}

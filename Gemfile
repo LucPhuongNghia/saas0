@@ -33,6 +33,8 @@ gem 'stripe', '1.48.0'
 
 gem 'figaro', '1.1.1'
 
+gem 'paperclip', '4.3.6'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
