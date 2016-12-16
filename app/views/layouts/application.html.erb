@@ -56,6 +56,8 @@
             <% unless user_signed_in? %>
               <li><%= link_to "Log in", new_user_session_path %></li>
             <% else %>
+              <li><%= link_to "Visit community", users_path %></li>
+              <li><%= link_to "My Account", edit_user_registration_path %></li>
               <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
             <% end %>
             <li><%= link_to "Contact Us", new_contact_path %></li>
